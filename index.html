@@ -22,12 +22,13 @@
             font-weight: bold !important;
             font-size: 24px !important;
         }
-        p {
+        
+        .first p{   
             color: white;
             text-align: center;
             font-size: 16px !important;
-            line-height: 170%;
         }
+        
 
         body::after{
             background-color: black;
@@ -40,12 +41,29 @@
         .alert{
             background: white;
             color: seagreen;
-            font-size: 24px;
+            font-size: 24px ;
             font-weight: bold;
         }
+
+        .address p {
+            
+            color: white;
+            text-align: center;
+            font-size: 24px !important;
+            margin-left: 1cm !important;
+        }
+        
+        .address h2 {
+            color: white;
+            font-weight: bold !important;
+            text-align: center !important;
+            font-size: 36px !important;
+            
+        }
+        
     </style>
 </head>
-<body style="background: url('wallpaper.jpg'); ">
+<body style="background: url('wallpaper.jpg')">
     <div class="overlay"></div>
         <div class="alert" style="position: fixed; top: 0px; width: 100%; height: 50px;">
             <marquee behavior="scroll" direction="left">
@@ -54,14 +72,30 @@
         </div>
     
     <div class="h-screen w-screen flex items-center justify-center">
-        <div>
+        <div class="first">
             <center>
                 <img class="profile-photo" src="profile.jpg" alt="">
             </center>
             <h1>Aaron Bascos</h1>
-            <p>I'm a Junior Web Developer <br> I'm From Philippines <br> I Like Playing Games <br> My Favorite Food is Pork Sinigang <br> My favorite Color is Black</p>
-            
+            <p>I'm a Junior Web Developer</p>                               
+            <div class="address" style="margin-top: 1cm">
+                <h2>My Address</h2>
+                <p>I'm from <span style="color: #72f35b">Santiago City, Isabela </span> </p>
+                <hr style="width: 110% !important">
+                <div>
+                    <h2>Hobbies</h2>
+                    <p>My Hobbies are: <span style="color: #72f35b">Playing Games, Eating, & Watching</span></p>
+                    <hr style="width: 110% !important">
+                        <h2 style="color: white; font-weight: bold; text-align: center; font-size: 36px">Favorite Foods</h2>
+                        <p style="color: white; font-size:24px !important">My Favorite Foods Are: <span style="color: #72f35b">Pork Sinigang, Pork Adobo, & Beef Broccoli</span> </p>
+                        <hr style="width: 110% !important">
+                        <h2 style="color: white; font-weight: bold; text-align: center; font-size: 36px">Favorite Colors</h2>
+                        <p style="color: white; font-size:24px !important">My Favorite Colors are <span style="color: hsl(0, 0%, 29%)">Black</span> and <span style="color: #fff">White</span> </p>
+                </div>
+            </div>
         </div>
     </div>
+
+
 </body>
 </html>
